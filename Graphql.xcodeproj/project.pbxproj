@@ -20,6 +20,14 @@
 		C8F02B9829C8C545000B348A /* HomeScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F02B9729C8C545000B348A /* HomeScreenCoordinator.swift */; };
 		C8F02B9A29C8C559000B348A /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F02B9929C8C559000B348A /* HomeScreenViewModel.swift */; };
 		C8F02B9E29C8C581000B348A /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F02B9D29C8C581000B348A /* HomeScreenView.swift */; };
+		C8F02BA229C8CF1E000B348A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F02BA129C8CF1E000B348A /* Product.swift */; };
+		C8F02BA429C8CF98000B348A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F02BA329C8CF98000B348A /* APIManager.swift */; };
+		C8F02BA629C8CFEC000B348A /* GraphQLOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F02BA529C8CFEC000B348A /* GraphQLOperation.swift */; };
+		C8F02BA829C8D21E000B348A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F02BA729C8D21E000B348A /* HTTPMethod.swift */; };
+		C8F02BAA29C8D274000B348A /* GraphQLQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F02BA929C8D274000B348A /* GraphQLQueries.swift */; };
+		C8F02BAC29C8D30A000B348A /* QueryObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F02BAB29C8D30A000B348A /* QueryObjects.swift */; };
+		C8F02BAE29C8FCEE000B348A /* GraphQLResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F02BAD29C8FCEE000B348A /* GraphQLResult.swift */; };
+		C8F02BB029C8FDBD000B348A /* GraphQLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F02BAF29C8FDBD000B348A /* GraphQLError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +65,14 @@
 		C8F02B9729C8C545000B348A /* HomeScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCoordinator.swift; sourceTree = "<group>"; };
 		C8F02B9929C8C559000B348A /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
 		C8F02B9D29C8C581000B348A /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		C8F02BA129C8CF1E000B348A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C8F02BA329C8CF98000B348A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		C8F02BA529C8CFEC000B348A /* GraphQLOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLOperation.swift; sourceTree = "<group>"; };
+		C8F02BA729C8D21E000B348A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		C8F02BA929C8D274000B348A /* GraphQLQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLQueries.swift; sourceTree = "<group>"; };
+		C8F02BAB29C8D30A000B348A /* QueryObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryObjects.swift; sourceTree = "<group>"; };
+		C8F02BAD29C8FCEE000B348A /* GraphQLResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLResult.swift; sourceTree = "<group>"; };
+		C8F02BAF29C8FDBD000B348A /* GraphQLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				C8F02B8D29C8C4CF000B348A /* Protocols */,
+				C8F02B9F29C8C7BE000B348A /* Networking */,
 				C8F02B9329C8C518000B348A /* Views */,
 				C8F02B5929C8C3D2000B348A /* AppDelegate.swift */,
 				C8F02B8929C8C456000B348A /* App.swift */,
@@ -165,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				C8F02B9729C8C545000B348A /* HomeScreenCoordinator.swift */,
+				C8F02BA029C8CECD000B348A /* Model */,
 				C8F02B9629C8C534000B348A /* View */,
 				C8F02B9529C8C52D000B348A /* ViewModel */,
 			);
@@ -185,6 +203,28 @@
 				C8F02B9D29C8C581000B348A /* HomeScreenView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C8F02B9F29C8C7BE000B348A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C8F02BA329C8CF98000B348A /* APIManager.swift */,
+				C8F02BA529C8CFEC000B348A /* GraphQLOperation.swift */,
+				C8F02BA729C8D21E000B348A /* HTTPMethod.swift */,
+				C8F02BA929C8D274000B348A /* GraphQLQueries.swift */,
+				C8F02BAB29C8D30A000B348A /* QueryObjects.swift */,
+				C8F02BAD29C8FCEE000B348A /* GraphQLResult.swift */,
+				C8F02BAF29C8FDBD000B348A /* GraphQLError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C8F02BA029C8CECD000B348A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8F02BA129C8CF1E000B348A /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,9 +359,17 @@
 			files = (
 				C8F02B9029C8C4E8000B348A /* Coordinator.swift in Sources */,
 				C8F02B5A29C8C3D2000B348A /* AppDelegate.swift in Sources */,
+				C8F02BA429C8CF98000B348A /* APIManager.swift in Sources */,
+				C8F02BA629C8CFEC000B348A /* GraphQLOperation.swift in Sources */,
+				C8F02BAE29C8FCEE000B348A /* GraphQLResult.swift in Sources */,
+				C8F02BA229C8CF1E000B348A /* Product.swift in Sources */,
+				C8F02BB029C8FDBD000B348A /* GraphQLError.swift in Sources */,
 				C8F02B9A29C8C559000B348A /* HomeScreenViewModel.swift in Sources */,
 				C8F02B9E29C8C581000B348A /* HomeScreenView.swift in Sources */,
+				C8F02BAA29C8D274000B348A /* GraphQLQueries.swift in Sources */,
 				C8F02B9229C8C4FA000B348A /* Router.swift in Sources */,
+				C8F02BAC29C8D30A000B348A /* QueryObjects.swift in Sources */,
+				C8F02BA829C8D21E000B348A /* HTTPMethod.swift in Sources */,
 				C8F02B9829C8C545000B348A /* HomeScreenCoordinator.swift in Sources */,
 				C8F02B8C29C8C473000B348A /* AppTransition.swift in Sources */,
 				C8F02B8A29C8C456000B348A /* App.swift in Sources */,

@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
-
-struct HomeScreenView: View {
-    var viewModel: HomeScreenViewModelRepresentable
+struct HomeScreenView<T>: View where T: HomeScreenViewModelRepresentable {
+    @StateObject var viewModel: T
     
     var body: some View {
-        Text("Hello")
+        List(viewModel.products) {
+            Text($0.name)
+        }
+        .onAppear {
+            viewModel.fechProductList()
+        }
     }
 }
